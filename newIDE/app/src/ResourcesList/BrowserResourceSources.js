@@ -114,11 +114,12 @@ export const UrlChooser = ({
 
                 onChooseResources(
                   urls.map(url => {
+                    console.log('url', url);
                     const newResource = createNewResource();
                     newResource.setFile(url);
                     newResource.setName(path.basename(url));
                     newResource.setOrigin('url', url);
-
+                    console.log('newResource', newResource);
                     return newResource;
                   })
                 );
