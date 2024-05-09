@@ -335,7 +335,8 @@ export const GameProvider = ({ children }) => {
       console.log("nfts", nfts);
   
       setIsLoadingNFT(false);
-      return nfts;
+      return nfts; 
+      // console.log(nfts)
     } catch (error) {
       console.error('Error fetching NFTs:', error);
       setIsLoadingNFT(false);
